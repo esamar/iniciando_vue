@@ -1,17 +1,27 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <nav>
+      <ul>
+        <li>
+          <router-link to='/Test'>HelloW</router-link>
+        </li>
+        <li>
+          <router-link to='/'>User</router-link>
+        </li>
+      </ul>
+    </nav>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
+import User from './components/user.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    User
   }
 }
 </script>
